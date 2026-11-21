@@ -1180,3 +1180,5 @@ function initCurrentYear() {
             element.textContent = new Date().getFullYear();
         });
 }
+
+// Version MUTUA actualizada

@@ -2282,3 +2282,141 @@ h3 {
         line-height: 1.65;
     }
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Botón principal */
+.chat-toggle {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 65px;
+  height: 65px;
+  border: none;
+  border-radius: 50%;
+  background: #d4af37;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+/* Ventana */
+.chatbox {
+  display: none;
+  position: fixed;
+  bottom: 105px;
+  right: 25px;
+  width: 350px;
+  height: 480px;
+  background: #171717;
+  border: 1px solid #d4af37;
+  border-radius: 15px;
+  overflow: hidden;
+  flex-direction: column;
+  color: white;
+  z-index: 99998;
+}
+
+.chatbox.active {
+  display: flex;
+}
+
+/* Encabezado */
+.chat-header {
+  background: #d4af37;
+  color: #111;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-header small {
+  display: block;
+  margin-top: 5px;
+}
+
+.chat-header button {
+  border: none;
+  background: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mensajes */
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.bot {
+  background: #303030;
+  color: white;
+}
+
+.user {
+  background: #d4af37;
+  color: #111;
+}
+
+/* Opciones */
+.chat-options {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 190px;
+  overflow-y: auto;
+}
+
+.chat-options button {
+  padding: 12px;
+  border: 1px solid #d4af37;
+  border-radius: 9px;
+  background: #242424;
+  color: #e5c65b;
+  cursor: pointer;
+  text-align: left;
+}
+
+.chat-options button:hover {
+  background: #d4af37;
+  color: #111;
+}
+
+/* Pie */
+.chat-footer {
+  padding: 10px;
+  border-top: 1px solid #444;
+}
+
+.chat-footer button {
+  border: none;
+  background: none;
+  color: #d4af37;
+  cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .chatbox {
+    width: calc(100% - 20px);
+    right: 10px;
+  }
+}

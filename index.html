@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="MUTUA: aprende, enseña e intercambia habilidades con otras personas.">
     <title>MUTUA | Aprende, enseña y comparte</title>
-    ```html
     <link rel="stylesheet" href="./styles.css">
-    <script src="./app.js" defer></script>
-```
 </head>
 <body>
 
+    <!-- ENCABEZADO -->
     <header class="header">
         <div class="container navbar">
             <a href="#" class="logo" aria-label="MUTUA, inicio">
@@ -44,6 +42,7 @@
     </header>
 
     <main>
+        <!-- INICIO -->
         <section class="hero" id="inicio">
             <div class="container hero-grid">
                 <div class="hero-content">
@@ -80,8 +79,10 @@
                             <span class="avatar avatar-three">👩🏾</span>
                             <span class="avatar avatar-four">👨🏻</span>
                         </div>
-                        <p><strong>Aprende a tu manera.</strong><br>
-                            Comparte lo que sabes con los demás.</p>
+                        <p>
+                            <strong>Aprende a tu manera.</strong><br>
+                            Comparte lo que sabes con los demás.
+                        </p>
                     </div>
                 </div>
 
@@ -147,6 +148,7 @@
             </div>
         </section>
 
+        <!-- BENEFICIOS -->
         <section class="benefits-strip">
             <div class="container benefits-grid">
                 <div class="benefit-item">
@@ -183,6 +185,7 @@
             </div>
         </section>
 
+        <!-- HABILIDADES -->
         <section class="section skills-section" id="explorar">
             <div class="container">
                 <div class="section-heading">
@@ -224,30 +227,17 @@
                 </div>
 
                 <div class="category-list" id="categoryList">
-                    <button type="button" class="category-chip selected" data-category="all">
-                        ✨ Todas
-                    </button>
-                    <button type="button" class="category-chip" data-category="idiomas">
-                        🌎 Idiomas
-                    </button>
-                    <button type="button" class="category-chip" data-category="musica">
-                        🎵 Música
-                    </button>
-                    <button type="button" class="category-chip" data-category="tecnologia">
-                        💻 Tecnología
-                    </button>
-                    <button type="button" class="category-chip" data-category="academico">
-                        📖 Académico
-                    </button>
-                    <button type="button" class="category-chip" data-category="arte">
-                        🎨 Arte y creatividad
-                    </button>
-                    <button type="button" class="category-chip" data-category="bienestar">
-                        🌿 Bienestar
-                    </button>
+                    <button type="button" class="category-chip selected" data-category="all">✨ Todas</button>
+                    <button type="button" class="category-chip" data-category="idiomas">🌎 Idiomas</button>
+                    <button type="button" class="category-chip" data-category="musica">🎵 Música</button>
+                    <button type="button" class="category-chip" data-category="tecnologia">💻 Tecnología</button>
+                    <button type="button" class="category-chip" data-category="academico">📖 Académico</button>
+                    <button type="button" class="category-chip" data-category="arte">🎨 Arte y creatividad</button>
+                    <button type="button" class="category-chip" data-category="bienestar">🌿 Bienestar</button>
                 </div>
 
                 <div class="skills-grid" id="skillsGrid">
+
                     <article class="skill-card" data-category="idiomas" data-search="inglés conversación idiomas">
                         <div class="skill-card-image skill-image-blue">
                             <span class="skill-emoji">🌎</span>
@@ -259,7 +249,10 @@
                             <h3>Inglés conversacional</h3>
                             <p>Practica conversaciones cotidianas y gana confianza al hablar.</p>
                             <div class="skill-card-footer">
-                                <div class="mini-profile"><span>👩🏻</span><div><strong>Alexandra</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <div class="mini-profile">
+                                    <span>👩🏻</span>
+                                    <div><strong>Alexandra</strong><small>Aprendizaje colaborativo</small></div>
+                                </div>
                                 <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Inglés conversacional">Conectar</button>
                             </div>
                         </div>
@@ -276,7 +269,10 @@
                             <h3>Primeros pasos en piano</h3>
                             <p>Conoce las notas, practica acordes y aprende canciones sencillas.</p>
                             <div class="skill-card-footer">
-                                <div class="mini-profile"><span>👨🏽</span><div><strong>Daniel</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <div class="mini-profile">
+                                    <span>👨🏽</span>
+                                    <div><strong>Daniel</strong><small>Aprendizaje colaborativo</small></div>
+                                </div>
                                 <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Primeros pasos en piano">Conectar</button>
                             </div>
                         </div>
@@ -293,7 +289,10 @@
                             <h3>Introducción a la programación</h3>
                             <p>Empieza a crear páginas web con HTML, CSS y JavaScript.</p>
                             <div class="skill-card-footer">
-                                <div class="mini-profile"><span>👩🏾</span><div><strong>Camila</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <div class="mini-profile">
+                                    <span>👩🏾</span>
+                                    <div><strong>Camila</strong><small>Aprendizaje colaborativo</small></div>
+                                </div>
                                 <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Introducción a la programación">Conectar</button>
                             </div>
                         </div>
@@ -310,7 +309,10 @@
                             <h3>Matemáticas sin miedo</h3>
                             <p>Refuerza álgebra y resuelve ejercicios paso a paso.</p>
                             <div class="skill-card-footer">
-                                <div class="mini-profile"><span>👨🏻</span><div><strong>Santiago</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <div class="mini-profile">
+                                    <span>👨🏻</span>
+                                    <div><strong>Santiago</strong><small>Aprendizaje colaborativo</small></div>
+                                </div>
                                 <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Matemáticas sin miedo">Conectar</button>
                             </div>
                         </div>
@@ -327,7 +329,10 @@
                             <h3>Dibujo e ilustración</h3>
                             <p>Explora técnicas de dibujo y desarrolla tu propio estilo.</p>
                             <div class="skill-card-footer">
-                                <div class="mini-profile"><span>👩🏼</span><div><strong>Valentina</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <div class="mini-profile">
+                                    <span>👩🏼</span>
+                                    <div><strong>Valentina</strong><small>Aprendizaje colaborativo</small></div>
+                                </div>
                                 <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Dibujo e ilustración">Conectar</button>
                             </div>
                         </div>
@@ -344,11 +349,15 @@
                             <h3>Organización y hábitos</h3>
                             <p>Comparte ideas para organizar tu tiempo y estudiar mejor.</p>
                             <div class="skill-card-footer">
-                                <div class="mini-profile"><span>🧑🏻</span><div><strong>Andrés</strong><small>Aprendizaje colaborativo</small></div></div>
+                                <div class="mini-profile">
+                                    <span>🧑🏻</span>
+                                    <div><strong>Andrés</strong><small>Aprendizaje colaborativo</small></div>
+                                </div>
                                 <button type="button" class="btn btn-small btn-outline contact-btn" data-skill="Organización y hábitos">Conectar</button>
                             </div>
                         </div>
                     </article>
+
                 </div>
 
                 <p class="empty-state" id="emptySkills" hidden>
@@ -357,6 +366,7 @@
             </div>
         </section>
 
+        <!-- PUBLICAR HABILIDAD -->
         <section class="publish-section" id="publicar">
             <div class="container publish-panel">
                 <div class="publish-copy">
@@ -367,6 +377,7 @@
                         Publicar mi habilidad <span>→</span>
                     </button>
                 </div>
+
                 <div class="publish-art" aria-hidden="true">
                     <div class="publish-circle"></div>
                     <div class="publish-note note-one">✦</div>
@@ -378,6 +389,7 @@
             </div>
         </section>
 
+        <!-- RECURSOS -->
         <section class="section resources-section" id="recursos">
             <div class="container">
                 <div class="section-heading">
@@ -392,7 +404,8 @@
                 <div class="resources-grid" id="resourcesGrid">
                     <article class="resource-card">
                         <div class="resource-cover resource-cover-blue">
-                            <span>EN</span><span class="resource-cover-emoji">🌎</span>
+                            <span>EN</span>
+                            <span class="resource-cover-emoji">🌎</span>
                             <span class="resource-type">GUÍA DE ESTUDIO</span>
                         </div>
                         <div class="resource-content">
@@ -405,7 +418,8 @@
 
                     <article class="resource-card">
                         <div class="resource-cover resource-cover-purple">
-                            <span>JS</span><span class="resource-cover-emoji">💻</span>
+                            <span>JS</span>
+                            <span class="resource-cover-emoji">💻</span>
                             <span class="resource-type">GUÍA PRÁCTICA</span>
                         </div>
                         <div class="resource-content">
@@ -418,7 +432,8 @@
 
                     <article class="resource-card">
                         <div class="resource-cover resource-cover-orange">
-                            <span>∑</span><span class="resource-cover-emoji">📐</span>
+                            <span>∑</span>
+                            <span class="resource-cover-emoji">📐</span>
                             <span class="resource-type">EJERCICIOS</span>
                         </div>
                         <div class="resource-content">
@@ -445,6 +460,7 @@
             </div>
         </section>
 
+        <!-- CÓMO FUNCIONA -->
         <section class="section how-section" id="como-funciona">
             <div class="container">
                 <div class="section-heading centered-heading">
@@ -460,18 +476,21 @@
                         <h3>Crea tu perfil</h3>
                         <p>Cuéntale a la comunidad qué sabes y qué quieres aprender.</p>
                     </article>
+
                     <article class="step-card">
                         <div class="step-number">02</div>
                         <div class="step-icon step-icon-purple">🔎</div>
                         <h3>Encuentra una habilidad</h3>
                         <p>Busca personas que puedan enseñarte algo que te interese.</p>
                     </article>
+
                     <article class="step-card">
                         <div class="step-number">03</div>
                         <div class="step-icon step-icon-green">🔄</div>
                         <h3>Propón un intercambio</h3>
                         <p>Ofrece tus conocimientos y acuerda cómo aprender juntos.</p>
                     </article>
+
                     <article class="step-card">
                         <div class="step-number">04</div>
                         <div class="step-icon step-icon-peach">🚀</div>
@@ -482,6 +501,7 @@
             </div>
         </section>
 
+        <!-- LLAMADO FINAL -->
         <section class="final-cta">
             <div class="container final-cta-content">
                 <span class="cta-sparkle">✦</span>
@@ -494,6 +514,7 @@
         </section>
     </main>
 
+    <!-- PIE DE PÁGINA -->
     <footer class="footer">
         <div class="container footer-main">
             <div class="footer-brand">
@@ -531,11 +552,13 @@
         </div>
     </footer>
 
+    <!-- VENTANA DE REGISTRO E INICIO DE SESIÓN -->
     <div class="modal-overlay" id="modalOverlay" hidden>
         <section class="modal" role="dialog" aria-modal="true"
                  aria-labelledby="modalTitle">
             <button type="button" class="modal-close" id="modalClose"
                     aria-label="Cerrar ventana">×</button>
+
             <div class="modal-brand-mark">M</div>
             <h2 id="modalTitle">Bienvenido a MUTUA</h2>
             <p class="modal-description" id="modalDescription">
@@ -565,6 +588,7 @@
 
                 <button type="submit" class="btn btn-primary btn-large form-submit"
                         id="accountSubmit">Continuar</button>
+
                 <p class="form-message" id="formMessage" role="status"></p>
             </form>
 
@@ -575,8 +599,39 @@
         </section>
     </div>
 
+    <!-- NOTIFICACIONES -->
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <!-- CHATBOT -->
+    <button type="button" id="chat-toggle" class="chat-toggle"
+            aria-label="Abrir asistente virtual">
+        💬
+    </button>
+
+    <section id="chatbox" class="chatbox">
+        <header class="chat-header">
+            <div>
+                <strong>Asistente virtual</strong>
+                <small>Estamos aquí para ayudarte</small>
+            </div>
+            <button type="button" id="chat-close" aria-label="Cerrar chat">×</button>
+        </header>
+
+        <main id="chat-messages" class="chat-messages"></main>
+
+        <div id="chat-options" class="chat-options"></div>
+
+        <footer class="chat-footer">
+            <button type="button" id="chat-home">
+                ← Volver al menú principal
+            </button>
+        </footer>
+    </section>
+
+    <!-- CONEXIÓN CON SUPABASE Y JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./supabase.js"></script>
+    <script src="./app.js"></script>
 
 </body>
 </html>
-```
